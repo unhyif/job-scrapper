@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="#">
+	<title>Error!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }  
+    body {
+      font-family: 'Source Code Pro', monospace;
+      text-align: center;
+    }
+    .msg {
+      padding-top: 200px;
+      font-size: 30px;
+    }
+    .return {
+      padding-top: 100px;
+      font-style: italic;
+      font-weight: Semi-bold;
+      font-size: 20px;
+    } 
+	</style>
+</head>
+
+<body style="background-color:WhiteSmoke;">
+	<main>
+		<div class="msg">
+      {% if er_code == 1 %}
+        ❗<br><br>We're sorry, We can't proceed with your keyword<br>
+        due to no recruitment or special symbols in your keyword.<br>
+        Please re-try with a new keyword! 
+      {% else %}
+        ❗<br>Access Error occurred.<br>
+        Please re-try!
+      {% endif %}
+    </div>
+		<div class="return">🏃‍♀️ <a href="/">Go back</a>
+    </div>
+	</main>
+</body>
+</html>
